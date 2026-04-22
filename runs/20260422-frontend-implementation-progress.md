@@ -2,3 +2,6 @@
 - [2026-04-22 16:39 GMT+8] 已创建 `client/` Android Compose 工程骨架、Gradle 配置、Manifest、主题资源与启动图标资源。
 - [2026-04-22 16:44 GMT+8] 已完成 Compose 单应用壳、导航、假数据仓库，以及导入 / 首页 / 航班 / 统计 / 相册 / 聊天室 / 我的六个 MVP 页面骨架。
 - [2026-04-22 16:58 GMT+8] 已补齐 Gradle wrapper，并为当前机器的 Java 11 环境下调 Android 构建工具链版本，准备进行实际构建验证。
+- [2026-04-22 17:04 GMT+8] 首轮 `assembleDebug` 已跑通到 Gradle Kotlin DSL 校验阶段，已修复 `packaging` 与 `packagingOptions` 的兼容性问题并继续构建验证。
+- [2026-04-22 17:07 GMT+8] 已确认 `./gradlew -version` 可用；`assembleDebug` 当前阻塞于本机未配置 Android SDK 路径，已整理为 handoff 构建前置依赖。
+- [2026-04-22 17:09 GMT+8] 已输出 `handoffs/frontend-implementation-ready.md`，整理交付文件、未完成项、联调依赖与构建方式。
