@@ -1,0 +1,14 @@
+{
+  "name": "aircabin-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal backend MVP for AirCabin flight records, stats, chat and reports.",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
