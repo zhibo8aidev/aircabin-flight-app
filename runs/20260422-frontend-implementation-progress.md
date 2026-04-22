@@ -1,0 +1,1 @@
+- [2026-04-22 16:32 GMT+8] 已阅读 proposal、spec、design、technical design、tasks 与 mockup，确认 Android Compose MVP 边界与显性状态表达要求。
