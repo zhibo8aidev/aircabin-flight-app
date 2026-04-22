@@ -1,9 +1,10 @@
 import { DataStore } from "../../storage/data-store.js";
 
 export class ReportService {
-  constructor(store, riskMiddleware) {
+  constructor(store, riskMiddleware, statsService) {
     this.store = store;
     this.riskMiddleware = riskMiddleware;
+    this.statsService = statsService;
   }
 
   async createReport(user, payload) {
@@ -41,5 +42,25 @@ export class ReportService {
     });
 
     return ticket;
+  }
+
+  async createYearlyReportMetadata(userId, year) {
+    const summary = await this.statsService.getYearlySummary(userId, year);
+    const topAirline = summary.breakdown.airlines[0]?.key ?? null;
+    const topRoute = summary.breakdown.routes[0]?.key ?? null;
+
+    return {
+      year,
+      title: `${year} 飞行年度报告`,
+      shareCardStatus: "ready",
+      generatedAt: new Date().toISOString(),
+      highlights: {
+        totalFlights: summary.totals.count,
+        totalMinutes: summary.totals.totalMinutes,
+        totalDistanceKm: summary.totals.totalDistanceKm,
+        topAirline,
+        topRoute
+      }
+    };
   }
 }

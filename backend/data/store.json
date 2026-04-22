@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "user_demo",
+      "deviceToken": "demo-device-token",
+      "nickname": "CloudSeat"
+    }
+  ],
+  "flightRecords": [
+    {
+      "id": "flight_demo_ca123",
+      "userId": "user_demo",
+      "flightNo": "CA123",
+      "airline": "Air China",
+      "departureAirport": "PEK",
+      "arrivalAirport": "SHA",
+      "departureCity": "Beijing",
+      "arrivalCity": "Shanghai",
+      "departureTime": "2026-04-22T05:30:00.000Z",
+      "arrivalTime": "2026-04-22T07:40:00.000Z",
+      "departureDate": "2026-04-22",
+      "cabinClass": "economy",
+      "seatNo": "18A",
+      "source": "manual",
+      "status": "scheduled",
+      "distanceKm": 1088,
+      "isInternational": false,
+      "createdAt": "2026-04-22T04:50:00.000Z",
+      "updatedAt": "2026-04-22T04:50:00.000Z"
+    },
+    {
+      "id": "flight_de1ae226c3d8",
+      "userId": "user_demo",
+      "flightNo": "MU5101",
+      "airline": "China Eastern",
+      "departureAirport": "SHA",
+      "arrivalAirport": "CAN",
+      "departureCity": "Shanghai",
+      "arrivalCity": "Guangzhou",
+      "departureTime": "2026-05-01T01:00:00.000Z",
+      "arrivalTime": "2026-05-01T03:20:00.000Z",
+      "departureDate": "2026-05-01",
+      "cabinClass": "business",
+      "seatNo": "3A",
+      "source": "manual",
+      "status": "scheduled",
+      "distanceKm": 1211,
+      "isInternational": false,
+      "createdAt": "2026-04-22T08:30:25.833Z",
+      "updatedAt": "2026-04-22T08:30:25.833Z"
+    }
+  ],
+  "chatRooms": [
+    {
+      "id": "room_744a1f518618",
+      "roomKey": "CA123:2026-04-22:economy",
+      "flightRecordId": "flight_demo_ca123",
+      "flightNo": "CA123",
+      "departureDate": "2026-04-22",
+      "cabinClass": "economy",
+      "announcement": "封闭匿名，仅限同舱位",
+      "createdAt": "2026-04-22T08:30:12.370Z"
+    }
+  ],
+  "chatMessages": [
+    {
+      "id": "msg_f2e65c4118be",
+      "roomId": "room_744a1f518618",
+      "senderUserId": "system",
+      "senderAlias": "AirCabin",
+      "kind": "system",
+      "content": "欢迎进入 CA123 economy 聊天室",
+      "createdAt": "2026-04-22T08:30:12.370Z"
+    }
+  ],
+  "reportTickets": [
+    {
+      "id": "report_82d62b6a0b95",
+      "reporterUserId": "user_demo",
+      "roomId": "room_demo",
+      "messageId": null,
+      "reportedUserId": null,
+      "category": "abuse",
+      "reason": "辱骂内容",
+      "status": "queued",
+      "createdAt": "2026-04-22T08:30:12.373Z"
+    }
+  ],
+  "moderationEvents": [
+    {
+      "id": "mod_d44893fd52d9",
+      "type": "report_queued",
+      "reportId": "report_82d62b6a0b95",
+      "createdAt": "2026-04-22T08:30:12.373Z"
+    }
+  ]
+}

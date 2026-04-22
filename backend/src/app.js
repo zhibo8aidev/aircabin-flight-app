@@ -51,7 +51,7 @@ export async function buildApp() {
   const flightService = new FlightService(store, provider);
   const statsService = new StatsService(store);
   const chatService = new ChatService(store, riskMiddleware);
-  const reportService = new ReportService(store, riskMiddleware);
+  const reportService = new ReportService(store, riskMiddleware, statsService);
 
   const router = new Router();
 
@@ -198,6 +198,18 @@ export async function buildApp() {
     }
 
     created(res, report);
+  });
+
+  router.register("POST", "/api/v1/reports/yearly", async (req, res) => {
+    const user = await authService.requireUser(req, res);
+    if (!user) {
+      return;
+    }
+
+    const payload = await readJsonBody(req);
+    const year = Number.parseInt(payload.year ?? String(config.defaultYear), 10);
+    const metadata = await reportService.createYearlyReportMetadata(user.id, year);
+    created(res, metadata);
   });
 
   return {
