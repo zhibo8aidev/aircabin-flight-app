@@ -12,32 +12,32 @@
   - `artifacts/design.md`
   - `artifacts/react_native_mockups/index.html`
   - `artifacts/react_native_mockups/styles.css`
-  - `runs/20260422-design-run-progress.md`
+  - `runs/20260422-design-revision-progress.md`
   - `handoffs/design-ready.md`
 - blocked items:
   - 无阻塞项
 - next owner: leader
 - entry conditions for the next owner:
-  - 审阅 `artifacts/design.md` 中的设计目标、状态设计和组件规范
-  - 打开 `artifacts/react_native_mockups/index.html` 评审六个核心页面的高保真稿
-  - 确认 Android 首发下 390 x 844 与 360 x 800 的关键信息层级可接受
+  - 审阅 `artifacts/design.md` 中新的视觉规范、布局原则、间距与排版规则
+  - 打开 `artifacts/react_native_mockups/index.html` 评审六个核心页面的 revision 稿
+  - 确认首页与航班页中 `模拟航线`、`实时修正`、`离线回退` 的辨识度足够且免责文案清晰
+  - 确认 390 x 844 与 360 x 800 设备上新的留白和触控尺寸可接受
 - execution evidence or related run ids:
-  - `runs/20260422-design-run.md`
-  - `runs/20260422-design-run-progress.md`
+  - `runs/20260422-design-revision-run.md`
+  - `runs/20260422-design-revision-progress.md`
 - explicit declaration:
-  - 以上产物由 designer 在 design 阶段生成，仅作为设计说明与评审基线，不代表实现完成
+  - 本次产物为 design 阶段 revision，仅用于设计评审与交付对齐，不代表实现完成
 
-## 新产物
-- `artifacts/design.md`
-  - 包含设计目标、信息架构、页面逐页说明、交互规则、组件规范、状态设计、设计风险与评审要点
-- `artifacts/react_native_mockups/index.html`
-  - HTML 高保真展示页，覆盖首页、航班页、统计页、相册整理页、聊天室页、我的页
-- `artifacts/react_native_mockups/styles.css`
-  - 深色科技感视觉样式、组件视觉规范、移动端适配样式
+## 本次 revision 主要变化
+- 视觉方向从旧版深色科技感改为极简、高级感、年轻化的冷白体系，主色切换为灰色 / 黑色 / 冷白 / 橙黄色。
+- 页面布局从高密度卡片堆叠调整为更宽松的单主卡结构，显著增加页面留白、卡片间距、列表行高度和触控舒适度。
+- 首页、航班页、统计页、相册整理页、聊天室页、我的页全部保留，但每页首屏内容数量被控制，信息层级更清晰。
+- `模拟航线`、`实时修正`、`离线回退` 在设计文档与 mockup 中均被固定命名，并通过状态芯片、说明文案、轨迹样式三层同时区分。
+- 相册页风险操作与聊天室弱网提示都转为更克制的中性表达，减少压迫感但保持清晰边界。
 
 ## 待评审点
-- “模拟航线”与“实时修正”在首页与航班页是否足够显性，不会误导成真实导航
-- 首页当前航班卡是否在视觉层级上压住快捷入口与年度摘要
-- 统计页在深色主题下的图表对比度是否满足机上低亮度场景
-- 相册整理页的删除风险提示和批量操作栏是否足够稳妥
-- 聊天室页的匿名感、封闭感与弱网反馈是否符合产品边界
+- 新版视觉是否已经足够脱离原有“深色 HUD”风格，并符合“极简、高级、年轻化”的目标。
+- 首页主卡、快捷入口和年度摘要之间的层级是否更符合海外用户的浏览习惯。
+- 航班页当前模式说明是否足够显性，不会被误读成真实导航或实时定位产品。
+- 统计页图表在浅色体系下是否仍具备足够对比与清晰度。
+- 相册页删除操作和聊天室封闭边界是否既清楚又不过度紧张。
