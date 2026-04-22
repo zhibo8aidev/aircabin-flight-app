@@ -11,7 +11,7 @@ source_inputs:
 available_artifacts:
   proposal_md: true
   specs_dir: true
-  design_md: false
+  design_md: true
   react_native_mockups: false
   tasks_md: false
   client_code: false
