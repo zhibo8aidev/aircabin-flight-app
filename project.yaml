@@ -1,8 +1,8 @@
 project_id: aircabin-flight-app
 title: 云舱 AirCabin
 client_target: android
-current_stage: tech_design_tasks
-stage_status: in_progress
+current_stage: tech_review
+stage_status: waiting_review
 source_inputs:
   idea: 设计并开发一款适合用户在飞机飞行途中使用的 Android APP，核心围绕飞行信息记录、航班社交、相册整理三个场景，支持航线模拟、飞行统计、登机牌导入、年度飞行报告、同航班同舱位聊天室，并重点考虑弱网/飞行模式与隐私安全。
   existing_prd: []
@@ -13,12 +13,13 @@ available_artifacts:
   specs_dir: true
   design_md: true
   react_native_mockups: true
-  tasks_md: false
+  tasks_md: true
   client_code: false
   backend_code: false
   test_report: false
   release_plan: false
-pending_reviews: []
+pending_reviews:
+- tech_review
 openspec_change_id: null
 react_native_mockups:
   status: ready_for_review
@@ -83,13 +84,12 @@ execution_policy:
     - design.md
     - tasks.md
 next_actions:
-- Produce and review tasks.md
+- Wait for explicit technical approval
 orchestration_mode: strong
 validation:
-  required_handoffs:
-  - leader -> frontend/backend
+  required_handoffs: []
   required_runs: []
-  artifact_origin_verified: false
+  artifact_origin_verified: true
   last_validation_note: null
 last_decision:
   stage: design_review
