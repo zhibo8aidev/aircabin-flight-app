@@ -1,0 +1,97 @@
+project_id: aircabin-flight-app
+title: 云舱 AirCabin
+client_target: android
+current_stage: proposal_specs
+stage_status: in_progress
+source_inputs:
+  idea: 设计并开发一款适合用户在飞机飞行途中使用的 Android APP，核心围绕飞行信息记录、航班社交、相册整理三个场景，支持航线模拟、飞行统计、登机牌导入、年度飞行报告、同航班同舱位聊天室，并重点考虑弱网/飞行模式与隐私安全。
+  existing_prd: []
+  existing_design: []
+  existing_repo: []
+available_artifacts:
+  proposal_md: false
+  specs_dir: false
+  design_md: false
+  react_native_mockups: false
+  tasks_md: false
+  client_code: false
+  backend_code: false
+  test_report: false
+  release_plan: false
+pending_reviews: []
+openspec_change_id: null
+react_native_mockups:
+  status: null
+  entry: null
+  files: []
+repo_targets:
+  client: /home/chenhuiming/.openclaw/projects/aircabin-flight-app
+  backend: /home/chenhuiming/.openclaw/projects/aircabin-flight-app
+client_stack:
+  frontend: jetpack-compose
+  design_target: mobile-app
+github:
+  owner: zhibo8aidev
+  repo: aircabin-flight-app
+  branch: main
+  private: false
+  auto_create_repo: true
+  auto_push: true
+  push_on_step: true
+  review_mode: github_links
+  repo_url: https://github.com/zhibo8aidev/aircabin-flight-app
+  clone_url: https://github.com/zhibo8aidev/aircabin-flight-app.git
+owners:
+  leader: leader
+  product: product
+  designer: designer
+  client: frontend
+  backend: backend
+  tester: tester
+  devops: devops
+execution_policy:
+  design:
+    runtime: acp
+    agent: codex
+    method: acp_codex
+    cwd: /home/chenhuiming/.openclaw/projects/aircabin-flight-app
+    deliverables:
+    - design.md
+    - mobile_mockups
+    mockup_format: html
+  frontend:
+    runtime: acp
+    agent: codex
+    method: acp_codex
+    cwd: /home/chenhuiming/.openclaw/projects/aircabin-flight-app
+    stack: jetpack-compose
+    follows:
+    - proposal.md
+    - specs/
+    - design.md
+    - tasks.md
+  backend:
+    runtime: acp
+    agent: codex
+    method: acp_codex
+    cwd: /home/chenhuiming/.openclaw/projects/aircabin-flight-app
+    follows:
+    - proposal.md
+    - specs/
+    - design.md
+    - tasks.md
+next_actions:
+- Generate or import proposal.md and specs/
+orchestration_mode: strong
+validation:
+  required_handoffs:
+  - product -> leader
+  required_runs: []
+  artifact_origin_verified: false
+  last_validation_note: null
+last_decision:
+  stage: null
+  decision: null
+  by: null
+  at: null
+  note: null
