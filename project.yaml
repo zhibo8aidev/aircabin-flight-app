@@ -85,8 +85,6 @@ execution_policy:
 next_actions:
 - 'Frontend handoff missing: record frontend implementation handoff before QA'
 - 'Backend handoff missing: record backend implementation handoff before QA'
-- 'Frontend run missing: record ACP Codex frontend execution before QA'
-- 'Backend run missing: record ACP Codex backend execution before QA'
 orchestration_mode: strong
 validation:
   required_handoffs:
