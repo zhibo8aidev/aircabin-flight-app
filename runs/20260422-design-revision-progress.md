@@ -2,3 +2,5 @@
 - [2026-04-22 15:46 CST] 已更新 artifacts/design.md，补充新的视觉规范、布局原则、留白与排版规则，以及首页、航班页、统计页、相册整理页、聊天室页、我的页的逐页调整点。
 - [2026-04-22 15:46 CST] 已重做 artifacts/react_native_mockups/index.html 与 styles.css，完成六页浅色极简 mockup，控制卡片密度并强化三种模式识别与免责表达。
 - [2026-04-22 15:46 CST] 已更新 handoffs/design-ready.md，补充本次 revision 的主要变化、交付边界与待评审点。
+- [2026-04-22 15:46 CST] 已完成关键文案与页面覆盖核对，确认六个页面仍完整覆盖，且模拟航线、实时修正、离线回退在文档与 mockup 中均有明确标识。
+- ✅ 最终汇报：已完成 design revision，交付新的极简冷白视觉规范、六页重做 mockup、revision handoff 与完整进度记录；同时保留原有功能范围，并持续强调模拟航线 / 实时修正 / 离线回退的非导航属性。
