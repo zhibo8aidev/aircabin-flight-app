@@ -3,6 +3,9 @@ title: 云舱 AirCabin
 client_target: android
 current_stage: implementation
 stage_status: blocked
+halted: true
+halted_at: '2026-04-22T18:13:00+08:00'
+halt_reason: 用户要求结束项目开发，保留当前 implementation 产物，不再继续 backend/QA/release，除非后续明确重启
 source_inputs:
   idea: 设计并开发一款适合用户在飞机飞行途中使用的 Android APP，核心围绕飞行信息记录、航班社交、相册整理三个场景，支持航线模拟、飞行统计、登机牌导入、年度飞行报告、同航班同舱位聊天室，并重点考虑弱网/飞行模式与隐私安全。
   existing_prd: []
@@ -83,8 +86,10 @@ execution_policy:
     - design.md
     - tasks.md
 next_actions:
-- 'Frontend handoff missing: record frontend implementation handoff before QA'
-- 'Backend handoff missing: record backend implementation handoff before QA'
+- Project halted by requester. Do not continue backend, QA, or release unless explicitly
+  resumed.
+- Retain current frontend deliverables and repository state for possible future resume
+  or archive.
 orchestration_mode: strong
 validation:
   required_handoffs:
@@ -97,8 +102,8 @@ validation:
   last_validation_note: Implementation artifacts are not promotable without separate
     frontend/backend handoffs and ACP Codex run evidence.
 last_decision:
-  stage: tech_review
-  decision: approved
+  stage: implementation
+  decision: halted
   by: requester
-  at: '2026-04-22T16:23:59'
-  note: 批准技术方案
+  at: '2026-04-22T18:13:00+08:00'
+  note: 结束项目开发，停止在当前实现状态
