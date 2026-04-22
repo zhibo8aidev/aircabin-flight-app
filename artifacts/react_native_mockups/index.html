@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="backdrop glow-one"></div>
-    <div class="backdrop glow-two"></div>
+    <div class="backdrop haze-one"></div>
+    <div class="backdrop haze-two"></div>
 
     <header class="page-header">
       <div>
-        <p class="eyebrow">AirCabin / Design Revision / Android First</p>
+        <p class="eyebrow">AirCabin / Revision 02 / Android First</p>
         <h1>云舱视觉修订稿</h1>
-        <p class="header-copy">极简、高级感、年轻化。灰黑冷白为底，橙黄色只用于关键信号与行动点。</p>
+        <p class="header-copy">更灰的背景，更白的卡片，更短的状态表达。六个核心页面范围保持不变。</p>
       </div>
       <div class="header-note">
         <span class="pill pill-sim">模拟航线</span>
@@ -45,7 +45,10 @@
                 <span class="pill pill-sim">模拟航线</span>
               </div>
               <h3>北京 PEK → 深圳 SZX</h3>
-              <p class="hero-copy">基于计划航线与飞行阶段估算，仅供飞行记录参考</p>
+              <div class="status-row">
+                <span class="caption-tag">计划参考</span>
+                <span class="mini-chip">Plan only</span>
+              </div>
               <div class="route-panel">
                 <div class="route-line route-line-sim"></div>
                 <div class="route-dot dot-left"></div>
@@ -56,15 +59,15 @@
               </div>
               <div class="metrics-row metrics-three">
                 <div>
-                  <span class="metric-label">当前阶段</span>
+                  <span class="metric-label">阶段</span>
                   <strong>巡航中</strong>
                 </div>
                 <div>
-                  <span class="metric-label">剩余时间</span>
+                  <span class="metric-label">剩余</span>
                   <strong>1h 18m</strong>
                 </div>
                 <div>
-                  <span class="metric-label">预计到达</span>
+                  <span class="metric-label">到达</span>
                   <strong>17:06</strong>
                 </div>
               </div>
@@ -73,37 +76,37 @@
 
             <section class="shortcut-grid">
               <article class="soft-card">
-                <p class="soft-label">本次飞行统计</p>
+                <p class="soft-label">本次飞行</p>
                 <strong>8,214 km</strong>
-                <span>已完成 72%</span>
+                <span>完成 72%</span>
               </article>
               <article class="soft-card">
                 <p class="soft-label">相册整理</p>
                 <strong>12.8 GB</strong>
-                <span>本机可释放空间</span>
+                <span>本机空间</span>
               </article>
               <article class="soft-card">
-                <p class="soft-label">同舱聊天室</p>
+                <p class="soft-label">同舱聊天</p>
                 <strong>28 人</strong>
-                <span>经济舱已验证</span>
+                <span>已验证</span>
               </article>
               <article class="soft-card">
-                <p class="soft-label">年度飞行报告</p>
+                <p class="soft-label">年度报告</p>
                 <strong>42 次</strong>
-                <span>累计 186 小时</span>
+                <span>186 小时</span>
               </article>
             </section>
 
             <article class="summary-card summary-wide">
               <div>
                 <p class="meta">2026 摘要</p>
-                <h3>更轻的首页，只保留最有用的信息</h3>
+                <h3>首屏只保留最有用的信息</h3>
               </div>
               <div class="summary-split">
                 <div><span>飞行次数</span><strong>42</strong></div>
                 <div><span>总时长</span><strong>186h</strong></div>
               </div>
-              <p class="summary-note">最常出现航线：北京 ↔ 深圳。历史航班与档案入口下沉到详情列表。</p>
+              <p class="summary-note">北京 ↔ 深圳为常见航线。历史档案下沉到详情列表。</p>
             </article>
 
             <nav class="bottom-nav">
@@ -115,7 +118,7 @@
             </nav>
           </div>
         </div>
-        <p class="caption">首页：首屏保留 1 张主卡 + 2 组次级内容，降低拥挤度</p>
+        <p class="caption">首页：更高对比的主卡与更松的入口卡，首屏只保留核心判断</p>
       </section>
 
       <section class="phone">
@@ -133,8 +136,11 @@
 
             <article class="mode-banner">
               <div>
-                <span class="pill pill-live">实时修正</span>
-                <p>最近修正 15:02 · 机上网络可用</p>
+                <div class="status-row">
+                  <span class="pill pill-live">实时修正</span>
+                  <span class="mini-chip">Synced 15:02</span>
+                </div>
+                <p>机上网络可用</p>
               </div>
               <div class="toggle">
                 <span class="active">2D</span>
@@ -151,7 +157,10 @@
                 <span class="route-label left">PEK</span>
                 <span class="route-label right">SZX</span>
               </div>
-              <p class="map-note">已结合最近网络数据修正，仍不代表真实导航位置</p>
+              <div class="map-footer">
+                <span class="caption-tag">已同步</span>
+                <span class="mini-chip">Reference only</span>
+              </div>
             </article>
 
             <article class="panel">
@@ -162,15 +171,15 @@
               <div class="panel-grid two">
                 <div><span>速度</span><strong>842 km/h</strong></div>
                 <div><span>海拔</span><strong>10,600 m</strong></div>
-                <div><span>剩余航程</span><strong>1,164 km</strong></div>
-                <div><span>预计到达</span><strong>17:04</strong></div>
+                <div><span>航程</span><strong>1,164 km</strong></div>
+                <div><span>到达</span><strong>17:04</strong></div>
               </div>
             </article>
 
             <article class="panel">
               <div class="panel-title">
                 <h3>时间进度</h3>
-                <span class="meta">计划起飞 13:38</span>
+                <span class="mini-chip">Plan 13:38</span>
               </div>
               <div class="metrics-row metrics-three">
                 <div><span class="metric-label">总时长</span><strong>3h 28m</strong></div>
@@ -195,7 +204,7 @@
             </nav>
           </div>
         </div>
-        <p class="caption">航班页：先展示模式，再展示地图与状态，避免误读成导航</p>
+        <p class="caption">航班页：模式先于地图，短状态替代长说明，减少误读风险</p>
       </section>
 
       <section class="phone">
@@ -222,9 +231,12 @@
 
             <div class="stats-stack">
               <article class="metric-card metric-hero">
-                <span>总飞行时长</span>
+                <div class="status-row">
+                  <span>总飞行时长</span>
+                  <span class="mini-chip">Offline cache</span>
+                </div>
                 <strong>186 h</strong>
-                <p>缓存数据更新于 14:58，仅供档案查看</p>
+                <p>Cached 14:58</p>
               </article>
               <div class="split-cards">
                 <article class="metric-card">
@@ -235,7 +247,7 @@
                 <article class="metric-card">
                   <span>总里程</span>
                   <strong>98,214 km</strong>
-                  <p>常乘航司 CA / MU</p>
+                  <p>CA / MU</p>
                 </article>
               </div>
             </div>
@@ -243,7 +255,7 @@
             <article class="chart-card">
               <div class="panel-title">
                 <h3>年度趋势</h3>
-                <span class="meta">缓存于 14:58</span>
+                <span class="mini-chip">Cached 14:58</span>
               </div>
               <div class="line-chart">
                 <span class="point p1"></span>
@@ -279,7 +291,7 @@
             </nav>
           </div>
         </div>
-        <p class="caption">统计页：大指标优先，图表下沉，阅读节奏更松</p>
+        <p class="caption">统计页：短缓存状态与更白卡片并行，图表留白继续拉开</p>
       </section>
 
       <section class="phone">
@@ -294,7 +306,7 @@
                 <p class="eyebrow">Private Cleanup</p>
                 <h2>相册整理</h2>
               </div>
-              <span class="meta">仅在本机处理</span>
+              <span class="mini-chip">On-device only</span>
             </div>
 
             <article class="space-card">
@@ -306,7 +318,7 @@
                 <span>候选项目</span>
                 <strong>1,248</strong>
               </div>
-              <p>最近扫描 15:01</p>
+              <p>Scanned 15:01</p>
             </article>
 
             <div class="chip-row">
@@ -348,7 +360,7 @@
             </nav>
           </div>
         </div>
-        <p class="caption">相册页：更像审阅流程，删除操作降压但仍明显</p>
+        <p class="caption">相册页：摘要更短，网格更松，底部操作与内容区拉开距离</p>
       </section>
 
       <section class="phone">
@@ -367,9 +379,9 @@
             <article class="room-card">
               <div class="room-title">
                 <span class="pill pill-live">舱位已验证</span>
-                <span class="meta">28 人在线</span>
+                <span class="mini-chip">28 Online</span>
               </div>
-              <p>匿名、封闭、低打扰。仅限同航班同舱位交流，禁止留联系方式与骚扰信息。</p>
+              <p>封闭匿名，仅限同舱位。</p>
             </article>
 
             <div class="chip-row">
@@ -398,7 +410,7 @@
 
             <div class="network-warning">
               <span class="pill pill-offline">网络不稳定</span>
-              <p>若断网将保留草稿，但不可实时发送</p>
+              <p>草稿会保留</p>
             </div>
 
             <div class="composer">
@@ -407,7 +419,7 @@
             </div>
           </div>
         </div>
-        <p class="caption">聊天室页：强化可信边界与弱网草稿反馈</p>
+        <p class="caption">聊天室页：边界更轻，消息外边距更大，弱网提示压缩为短 caption</p>
       </section>
 
       <section class="phone">
@@ -435,7 +447,7 @@
 
             <article class="summary-card">
               <p class="meta">飞行档案</p>
-              <h3>更清爽的个人档案入口</h3>
+              <h3>更轻的档案入口</h3>
               <div class="summary-split">
                 <div><span>历史航班</span><strong>128</strong></div>
                 <div><span>报告状态</span><strong>已生成</strong></div>
@@ -444,16 +456,16 @@
 
             <article class="list-card">
               <h3>权限与隐私</h3>
-              <div class="list-row"><span>相册权限</span><strong>已开启</strong></div>
-              <div class="list-row"><span>通知权限</span><strong>未开启</strong></div>
-              <div class="list-row"><span>数据同步</span><strong>仅 Wi-Fi</strong></div>
+              <div class="list-row"><span>相册权限</span><strong>On</strong></div>
+              <div class="list-row"><span>通知权限</span><strong>Off</strong></div>
+              <div class="list-row"><span>数据同步</span><strong>Wi-Fi only</strong></div>
             </article>
 
             <article class="list-card">
               <h3>设置</h3>
               <div class="list-row"><span>主题风格</span><strong>Light Cabin</strong></div>
-              <div class="list-row"><span>关于</span><strong>v1 Android 首发</strong></div>
-              <div class="list-row"><span>帮助与反馈</span><strong>提交问题</strong></div>
+              <div class="list-row"><span>关于</span><strong>v1 Android</strong></div>
+              <div class="list-row"><span>帮助与反馈</span><strong>Open</strong></div>
               <div class="list-row danger-text"><span>清除本地缓存</span><strong>谨慎操作</strong></div>
             </article>
 
@@ -466,7 +478,7 @@
             </nav>
           </div>
         </div>
-        <p class="caption">我的页：卡片更轻，列表更稳，风险项独立靠后</p>
+        <p class="caption">我的页：列表更松，状态值更短，风险项继续独立靠后</p>
       </section>
     </main>
   </body>

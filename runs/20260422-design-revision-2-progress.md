@@ -1,1 +1,2 @@
 - [2026-04-22 16:18 GMT+8] 已更新 artifacts/design.md，明确第二轮对比度提升、背景/卡片新色值、短状态标签表达与更宽松留白规则。
+- [2026-04-22 16:25 GMT+8] 已更新 artifacts/react_native_mockups/index.html 与 styles.css，六个核心页面保持不变，统一改为更灰背景、更白卡片、短状态标签与更大留白。
